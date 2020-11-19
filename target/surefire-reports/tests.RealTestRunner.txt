@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: tests.RealTestRunner
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 1.043 s <<< FAILURE! - in tests.RealTestRunner
+Get all posts(Get Employees details)  Time elapsed: 0.213 s  <<< ERROR!
+io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in glue.Gluecode1.method8(java.lang.String) and glue.Gluecode2.method8(java.lang.String)
+
+tests.RealTestRunner  Time elapsed: 0.224 s  <<< ERROR!
+org.junit.runner.notification.StoppedByUserException
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+

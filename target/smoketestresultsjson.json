@@ -1,0 +1,123 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-11-19T20:26:58.041Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "glue.Shared.method(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Get Specific employee post",
+        "description": "",
+        "id": "get-employees-details;get-specific-employee-post",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 387000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "registered uri/endpoint is \"http://jsonplaceholder.typicode.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://jsonplaceholder.typicode.com",
+                  "offset": 28
+                }
+              ],
+              "location": "glue.Gluecode1.method1(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 100000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "create a default HTTP request",
+            "match": {
+              "location": "glue.Gluecode1.method2()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1350000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "submit request to service via GET method with path parameter as \"posts\" and id as \"1\" and get response",
+            "match": {
+              "arguments": [
+                {
+                  "val": "posts",
+                  "offset": 65
+                },
+                {
+                  "val": "1",
+                  "offset": 83
+                }
+              ],
+              "location": "glue.Gluecode1.method5(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "output": [
+              "Posts/Post retrieving/creation tests passed"
+            ],
+            "result": {
+              "duration": 440000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "status code is \"200\" and content type is \"application/json\" with id value as \"1\" in response body",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 16
+                },
+                {
+                  "val": "application/json",
+                  "offset": 42
+                },
+                {
+                  "val": "1",
+                  "offset": 78
+                }
+              ],
+              "location": "glue.Gluecode2.method6(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoketest"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Get Employees details",
+    "description": "",
+    "id": "get-employees-details",
+    "keyword": "Feature",
+    "uri": "file:///E:/Automation/AutomationNested/com.bddcucumber.api/src/test/resources/features/feature2.feature",
+    "tags": []
+  }
+]
